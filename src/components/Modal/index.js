@@ -72,7 +72,7 @@ class Modal extends Component {
         transparent={transparent}
         visible={visible}
       >
-        <View>
+        <View style={styles.modelIndex}>
           <StyleComponent />
           <TransitionGroup 
             classNames={animationType}
@@ -104,6 +104,9 @@ const styles = StyleSheet.create({
   },
   noTransparent:{
     backgroundColor:'white'
+  },
+  modelIndex:{
+    zIndex: 100,
   }
 });
 
